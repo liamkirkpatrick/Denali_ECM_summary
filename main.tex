@@ -1,0 +1,171 @@
+\documentclass[11pt,letterpaper]{article}
+
+% ============================================
+% PACKAGES
+% ============================================
+
+% Page layout
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\usepackage{microtype}
+
+% Figures and tables
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{mwe} % Provides the example-image placeholder
+
+% Mathematics and scientific notation
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{siunitx}
+
+% Bibliography (Zotero / BibLaTeX)
+\usepackage[
+    backend=biber,
+    style=authoryear,
+    sorting=nyt
+]{biblatex}
+\addbibresource{references.bib} % Change to your linked Zotero .bib filename if needed
+
+% Hyperlinks and references
+\usepackage[
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+]{hyperref}
+
+% ============================================
+% DOCUMENT INFORMATION
+% ============================================
+
+\title{Title of Scientific Report}
+\author{Author Name \\ Institution or Affiliation}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+% ============================================
+% ABSTRACT (OPTIONAL)
+% ============================================
+
+\begin{abstract}
+A brief summary of the report, including its motivation, objectives,
+methods, and principal findings.
+\end{abstract}
+
+% ============================================
+\section{Introduction}
+% ============================================
+
+Introduce the topic and motivation for the report.
+
+% After adding references to references.bib, cite with:
+% \parencite{yourCitationKey} -- parenthetical citation
+% \textcite{yourCitationKey}  -- author in the sentence
+
+\subsection{Background}
+
+Provide relevant background information.
+
+\subsection{Objectives}
+
+Describe the objectives of the report.
+
+% ============================================
+\section{Methods}
+% ============================================
+
+Describe the methods and datasets used.
+
+\subsection{Data Collection}
+
+Describe data sources and collection procedures.
+
+\subsection{Data Analysis}
+
+Describe the analytical approach. For example,
+
+\begin{equation}
+    y = mx + b
+    \label{eq:example}
+\end{equation}
+
+Refer to it using Equation~\ref{eq:example}.
+
+% ============================================
+\section{Results}
+% ============================================
+
+Present the results of the analysis.
+
+\subsection{Primary Results}
+
+An example figure is shown in Figure~\ref{fig:example}.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{example-image}
+    % Replace example-image with figures/your_figure.png
+    \caption{Example figure caption describing the content of the figure.}
+    \label{fig:example}
+\end{figure}
+
+\subsection{Additional Results}
+
+Additional results can be presented here (Table~\ref{tab:example}).
+
+\begin{table}[htbp]
+    \centering
+    \caption{Example table with sample data.}
+    \label{tab:example}
+    \begin{tabular}{lcc}
+        \toprule
+        Variable & Sample A & Sample B \\
+        \midrule
+        Measurement 1 & 12.5 & 14.2 \\
+        Measurement 2 & 8.3 & 9.1 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+% ============================================
+\section{Discussion}
+% ============================================
+
+Interpret the results and discuss their implications, limitations, and
+relationship to previous research.
+
+\subsection{Interpretation}
+
+Discuss the significance of the findings.
+
+\subsection{Limitations}
+
+Describe important sources of uncertainty.
+
+% ============================================
+\section{Conclusions}
+% ============================================
+
+Summarize the principal findings and their broader implications.
+
+% ============================================
+% REFERENCES
+% ============================================
+
+\printbibliography[title={References}]
+
+% ============================================
+% APPENDIX (OPTIONAL)
+% ============================================
+
+% \appendix
+% \section{Supplementary Information}
+
+\end{document}
