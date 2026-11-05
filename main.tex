@@ -38,13 +38,17 @@
     urlcolor=blue
 ]{hyperref}
 
+% After adding references to references.bib, cite with:
+% \parencite{yourCitationKey} -- parenthetical citation
+% \textcite{yourCitationKey}  -- author in the sentence
+
 % ============================================
 % DOCUMENT INFORMATION
 % ============================================
 
-\title{Title of Scientific Report}
-\author{Author Name \\ Institution or Affiliation}
-\date{\today}
+\title{Denali Ice Cores Basal ECM Results}
+\author{Liam Kirkpatrick, T.J. Fudge \\ University of Washington, Department of Earth Science}
+\date{November 4, 2026}
 
 \begin{document}
 
@@ -55,105 +59,68 @@
 % ============================================
 
 \begin{abstract}
-A brief summary of the report, including its motivation, objectives,
-methods, and principal findings.
+This report summarizes results from 2D ECM measurements on the basal portion of the Denali ice cores. The goal of this work was to characterize the layering in this deepest ice, to evaluate the possibility of folding or disturbed stratigraphy. We find no visible evidence of folder. Layer dip orientations appear moderate ($<$20$^\circ$). These results support preserved stratigraphy in the basal portion of the Denali ice cores.
 \end{abstract}
-
-% ============================================
-\section{Introduction}
-% ============================================
-
-Introduce the topic and motivation for the report.
-
-% After adding references to references.bib, cite with:
-% \parencite{yourCitationKey} -- parenthetical citation
-% \textcite{yourCitationKey}  -- author in the sentence
-
-\subsection{Background}
-
-Provide relevant background information.
-
-\subsection{Objectives}
-
-Describe the objectives of the report.
 
 % ============================================
 \section{Methods}
 % ============================================
 
-Describe the methods and datasets used.
+\subsection{2D ECM measurements}
 
-\subsection{Data Collection}
+The ECM device setup in this study follows \textcite{kirkpatrick_three-dimensional_2025}. The AC ECM electrodes and overall device design are identical to the configuration described in this manuscript. However, in this study, ECM measurements are made on a single face (2D ECM), as in \textcite{fudge_electrical_2016}, rather than on two faces (3D ECM), as in \textcite{kirkpatrick_three-dimensional_2025}. We measued a total of [X] sections of the DEN13A core, with [X] m of ice measured between [X] m to [X] m in depth.
 
-Describe data sources and collection procedures.
+The DC electrodes applied in this study were experimental, and there are no other publications which describe these experimental electrodes in operation. We were not able to obtain DC ECM measurements on many of the sections in this study, due to time constraints and difficulties with the novel configuration. Additionally, we find that the DC ECM data is more noisy than the AC ECM data. We include a set of DC ECM figures in this report, but suggest that a final publication only includes the AC ECM data, for simplicity and because these are the clearest results. Without significant data shallower in the core or on other cores, interpreting the DC ECM data presented here is difficult. The use of AC ECM for layer orientation characterization follows other recent work with this instrument \parencite{kirkpatrick_three-dimensional_2025}
 
-\subsection{Data Analysis}
+\subsection{Apparent Dip calculation}
 
-Describe the analytical approach. For example,
-
-\begin{equation}
-    y = mx + b
-    \label{eq:example}
-\end{equation}
-
-Refer to it using Equation~\ref{eq:example}.
+[AI please complete a summary of the apparent dip method. Include a couple of lines explaining how apparent and true dip are different, and that apparent dip only places an upper bound on true dip]
 
 % ============================================
 \section{Results}
 % ============================================
 
-Present the results of the analysis.
-
-\subsection{Primary Results}
-
-An example figure is shown in Figure~\ref{fig:example}.
+We include three sets of figures for all sections. The first is shown in Fig.~\ref{fig:[AC_only_example]}; this is a simple plot showing 2D AC ECM [complete this summary. At the end, mention how these figures are likely the best to asses the continuity of layers. Note that section 228d (down to 208.14 m) is as deep as we can clearly see layers,a nd that below this things appear complex.]
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.8\textwidth]{example-image}
-    % Replace example-image with figures/your_figure.png
-    \caption{Example figure caption describing the content of the figure.}
-    \label{fig:example}
+    \includegraphics[width=0.8\textwidth]{[figure_filename]}
+    \caption{[complete caption]}
+    \label{fig:[AC_only_example]}
 \end{figure}
 
-\subsection{Additional Results}
+The second set of figures also includes DC ECM data, for the [X] sections (of [Y] total) [complete this summary - should be short as is very similar as above]
 
-Additional results can be presented here (Table~\ref{tab:example}).
-
-\begin{table}[htbp]
+\begin{figure}[htbp]
     \centering
-    \caption{Example table with sample data.}
-    \label{tab:example}
-    \begin{tabular}{lcc}
-        \toprule
-        Variable & Sample A & Sample B \\
-        \midrule
-        Measurement 1 & 12.5 & 14.2 \\
-        Measurement 2 & 8.3 & 9.1 \\
-        \bottomrule
-    \end{tabular}
-\end{table}
+    \includegraphics[width=0.8\textwidth]{[figure_filename]}
+    \caption{[complete caption]}
+    \label{fig:[AC_and_DC_example]}
+\end{figure}
+
+The third set of figures demonstrates the apparent dip calculation approach [complete this summary] 
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{[figure_filename]}
+    \caption{[complete caption]}
+    \label{fig:[dip_example]}
+\end{figure}
+
+[Now include a paragraph walking through the figure showing dip over depth, across all sections. I want to emphasize that only a single layer shows a dip over 20 degrees, and a visual inspection shows that the fit might be overestimating the dip on this section. The emphasis should be that dip angles are generally below 20 degrees. Explain how both negative and positive dip angles are expected due to changes in core orientation, as are changes from one section to the next. Also mention the  high number of core breaks within sections, which also means dip angles might change within a section.]
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{[figure_filename]}
+    \caption{[complete caption]}
+    \label{fig:[dip_over_depth_figure]}
+\end{figure}
 
 % ============================================
-\section{Discussion}
+\section{Conclusion}
 % ============================================
 
-Interpret the results and discuss their implications, limitations, and
-relationship to previous research.
-
-\subsection{Interpretation}
-
-Discuss the significance of the findings.
-
-\subsection{Limitations}
-
-Describe important sources of uncertainty.
-
-% ============================================
-\section{Conclusions}
-% ============================================
-
-Summarize the principal findings and their broader implications.
+We do not believe these results provide definitive proof of continuous stratigraphy. However, they appear to show planar layering with consistently low dip angles. However, they provide additional evidence that the basal ice between [X] and 208.14 m in DEN13A exhibits clear layering which appears planar. While steeper dip angles are possible, we note that despite the large number of core orientation changes, there is little evidence that dip angles exceed 20$^\circ$ in this ice. We believe these results can form part of the evidence that the Denali ice cores might provide an intact Holocene onset record in the near-basal ice. 
 
 % ============================================
 % REFERENCES
@@ -161,11 +128,5 @@ Summarize the principal findings and their broader implications.
 
 \printbibliography[title={References}]
 
-% ============================================
-% APPENDIX (OPTIONAL)
-% ============================================
-
-% \appendix
-% \section{Supplementary Information}
 
 \end{document}
